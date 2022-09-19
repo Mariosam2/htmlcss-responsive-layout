@@ -39,6 +39,10 @@ a {
     color: white;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 h2 {
     font-size: 28px;
 }
@@ -173,11 +177,20 @@ img {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 .blue {
     background-color: var(--var-secondary-blue);
+}
+
+.purple {
+    background-color: var(--var-primary-purple);
 }
 /* #endregion */
 
@@ -244,11 +257,10 @@ header nav {
     padding: 0;
 }
 
-.app_store {
+.app_store, .linkedin {
     margin: 1rem 0;
-    width: 70%;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
+    width: 60%;
+    
 }
 
 .app_store i {
@@ -273,7 +285,6 @@ header nav {
 .planning .col-12.column {
     justify-content: flex-end;
    
-    
 }
 
 
@@ -285,6 +296,7 @@ header nav {
 .strategic img {
     padding-top: 4rem;
     padding-bottom: 8rem;
+    
 }
 
 .strategic p {
@@ -341,6 +353,11 @@ header nav {
     text-align: center;
 }
 
+.partner .bio i {
+    padding: 0 0.5rem;
+    font-size: 24px;
+}
+
 .partner >*, .partner .bio >* {
     padding: 0.5rem 0;
 }
@@ -352,13 +369,70 @@ header nav {
 
 
 
-.avatar img {
+.avatar img, .about img {
     width: 10rem;
     height: 10rem;
+    display: block;
     object-fit: cover;
     border-radius: 50%;
 }
+
+.benefits .col-12 {
+    padding: 1rem;
+}
+
+.benefits .content {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+   
+}
+
+.benefits h1 {
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.lg {
+    font-size: 48px;
+    font-weight: 600;
+    
+}
+
+.benefits .content h1, .benefits .content h2 {
+    color: var(--var-primary-purple);
+}
+
+.benefits .content h2 {
+    font-weight: 600;
+}
+
+.benefits .content p {
+    color: var(--var-secondary-text);
+    padding: 2rem 0;
+}
+
+.about h1, .about h2, .about .about_img i {
+    color: var(--var-primary-purple);
+    padding: 2rem 0;
+}
+
+.about .about_img i {
+    font-size: 52px;
+    position: absolute;
+    top: 5%;
+    left: 7.8rem;
+}
+
+.about .btn i {
+    padding-right: 0.3rem;
+}
+
+.about p {
+    padding-bottom: 2rem;
+}
  
+
 
 
 
@@ -379,6 +453,9 @@ footer {
 /* respsonsive */
 @media screen and (min-width: 768px) {
     
+
+    
+
     .col-md-8 {
         width: calc((100%/12)*8);
     }
@@ -408,11 +485,13 @@ footer {
         width: calc((100%/12)*6);
     }
 
+    .linkedin {
+        width: 100%;
+    }
+
 
     
 }
-
-
 
 @media screen and (min-width: 1200px) {
 
@@ -440,9 +519,6 @@ footer {
         padding-left: 8rem;
     }
 
-    .heading h2 {
-        font-size: 32px;
-    }
     
 
     .planning .content {
@@ -454,8 +530,20 @@ footer {
         padding-left: 3rem;
     }
 
+
+    .linkedin {
+        width: 60%;
+    }
+
     
     
 
     
 }   
+
+
+@media screen and (min-width: 1630px) {
+    .about h2{
+        width: 60%;
+    }
+}
