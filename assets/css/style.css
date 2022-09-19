@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.011em;
 }
 
 .container {
@@ -38,8 +39,17 @@ a {
     color: white;
 }
 
+h2 {
+    font-size: 28px;
+}
+
 h3 {
     font-size: 1.5rem;
+}
+
+p {
+    line-height: 188%;
+
 }
 
 img {
@@ -212,9 +222,8 @@ header nav {
 
 .demo .content p {
     padding: 2rem 0;
-    line-height: 188%;
-    letter-spacing: 0.011em;
     color: var(--var-secondary-text);
+    font-weight: 600;
     
 }
 
@@ -230,23 +239,25 @@ header nav {
     padding: 2rem 0;
 }
 .demo .fa-apple {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     padding: 0;
 }
 
 .app_store {
     margin: 1rem 0;
-    width: 50%;
+    width: 70%;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 .app_store i {
     margin-right: 0.5rem;
     
+    
 }
 
 .phone {
-    display: flex;
     align-items: flex-end;
     margin-bottom: -1rem;
     padding-left: 3rem;
@@ -259,12 +270,13 @@ header nav {
     
 }
 
-.col-12.pt-50 {
-    display: flex;
+.planning .col-12.column {
     justify-content: flex-end;
-    padding-left: 4rem;
+   
     
 }
+
+
 
 .strategic {
     color: white;
@@ -279,19 +291,74 @@ header nav {
     padding: 3rem 0;
 }
 
+.strategic h3 {
+    font-size: 28px;
+}
+
 
 
 .planning .content {
     background-color: white;
     padding: 2rem 4rem;
     border-radius: 4rem;
-    width: 65%;
+    width: 100%;
 }
 
 .planning .content>*{
     padding: 1rem 0;
 }
 
+.planning .content p {
+    font-style: italic;
+}
+
+.arrow {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--var-primary-purple);
+    margin-top: 1rem;
+}
+
+.heading >* {
+    padding: 1rem 0;
+}
+
+.heading h2 {
+    color: var(--var-primary-purple);
+}
+
+.partner {
+    flex-direction: column;
+    background-color: var(--var-primary-purple);
+    border-radius: 4rem;
+    padding: 1rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+.partner .bio {
+    text-align: center;
+}
+
+.partner >*, .partner .bio >* {
+    padding: 0.5rem 0;
+}
+
+.partner h3 {
+    font-weight: 600;
+    font-size: 1.375rem;
+}
+
+
+
+.avatar img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ 
 
 
 
@@ -316,7 +383,23 @@ footer {
         width: calc((100%/12)*8);
     }
 
- 
+   .strategic img {
+    width: 100%;
+    object-fit: cover;
+   }
+
+   .partner {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .partner .bio  {
+    flex-basis: 80%;
+    text-align: left;
+    padding: 1rem;
+   }
+
+   
     
     .col-md-4 {
         width: calc((100%/12)*4);
@@ -324,11 +407,16 @@ footer {
     .col-md-6 {
         width: calc((100%/12)*6);
     }
+
+
+    
 }
 
 
 
 @media screen and (min-width: 1200px) {
+
+   
     
     .col-lg-6 {
         width: calc((100%/12)*6);
@@ -347,6 +435,27 @@ footer {
     .bars {
         display: none;
     }
+
+    .planning .col-12 {
+        padding-left: 8rem;
+    }
+
+    .heading h2 {
+        font-size: 32px;
+    }
+    
+
+    .planning .content {
+        width: 75%;
+    }
+
+    .partner .bio {
+        flex-basis: 90%;
+        padding-left: 3rem;
+    }
+
+    
+    
 
     
 }   
