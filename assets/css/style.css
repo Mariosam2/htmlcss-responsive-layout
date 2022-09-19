@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+
+/* Utilites */
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+
+/* #region columns */
+
+.col-3 {
+    width: calc((100%/12)*3);
+}
+
+.col-4 {
+    width: calc((100%/12)*4);
+}
+
+.col-8 {
+    width: calc((100%/12)*8);
+}
+
+.col-12 {
+    width: 100%;
+    
+}
+
+
+[class^="col-"] {
+    padding: 0 1rem;
+}
+/* #endregion */
+
+/* #region debug */
+.debug header {
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+.debug .logo, .debug .main_menu {
+    border: 1px solid;
+    width: 150px;
+}
+
+
+.debug [class^="col-"] {
+    height: 350px;
+    border: 1px solid red;
+}
+
+.debug .partners .heading, .debug .partners .partner {
+    height: 200px;
+    background-color: gainsboro;
+    border: 1px solid;
+}
+
+.debug .partner .avatar {
+    width: 150px;
+    background-color: red;
+    
+}
+
+.debug .call_to_action .container {
+    height: 400px;
+    background-color: green;
+}
+
+.debug footer {
+    height: 200px;
+}
+
+/* #endregion */
+
+
+/* #region header */
+header nav {
+    padding: 1rem 0;
+}
+
+.main_menu {
+    display: none;
+}
+
+/* #endregion */
+
+/* #region main */
+.planning {
+    background-color: blue;
+}
+
+.benefits {
+    background-color: aqua;
+}
+
+.call_to_action {
+    background-color: yellow;
+}
+
+
+/* #endregion */
+
+/* #region footer */
+footer {
+    background-color: black;
+}
+/* #endregion */
+
+
+/* respsonsive */
+@media screen and (min-width: 768px) {
+    
+    .col-md-8 {
+        width: calc((100%/12)*8);
+    }
+    
+    .col-md-4 {
+        width: calc((100%/12)*4);
+    }
+    .col-md-6 {
+        width: calc((100%/12)*6);
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    
+    .col-lg-6 {
+        width: calc((100%/12)*6);
+    }
+
+    .col-lg-4 {
+        width: calc((100%/12)*4);
+    }
+    
+    .main_menu {
+        display: block;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    
+}   
