@@ -24,6 +24,11 @@
     margin: 0 auto;
 }
 
+.container_sm {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +42,7 @@ section {
 a {
     text-decoration: none;
     color: white;
+    
 }
 
 h1 {
@@ -165,24 +171,45 @@ img {
 
 /* #region btn */
 
-.btn, .btn_small {
-    border-radius: 2rem;
-    padding: 0.5rem 0.8rem;
-}
 
-.btn_small {
-    background-color: white;
-    color: black;
-    
-}
 
-.btn {
+
+.btn, .btn_small, .btn_large, .main_menu li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s ease;
+}
+
+.btn_small, .main_menu li a {
+    padding: 0.5rem 0.8rem;
+   
+}
+
+.btn_small {
+    color: black;
+}
+
+
+.btn {
     width: 40%;
     font-weight: 600;
-    letter-spacing: 0.2rem;
+    padding: 0.6rem 1rem;
+}
+
+.btn_large {
+    padding: 1.5rem 2rem;
+    width: 80%;
+    font-weight: 600;
+    color: var(--var-primary-purple);
+}
+
+.white {
+    background-color: white;
+    
+    
 }
 
 .blue {
@@ -191,7 +218,18 @@ img {
 
 .purple {
     background-color: var(--var-primary-purple);
+    
 }
+
+.white:hover {
+    box-shadow: 0 0 3px 3px var(--var-almost-black);
+}
+
+.blue:hover, .purple:hover, .arrow:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
 /* #endregion */
 
 /* #region header */
@@ -211,6 +249,12 @@ header nav {
 
 .main_menu li {
     padding: 1rem;
+}
+
+
+.main_menu li:hover a {
+    color: var(--var-secondary-blue);
+    background-color: white;
 }
 
 .bars {
@@ -239,8 +283,6 @@ header nav {
     font-weight: 600;
     
 }
-
-
 
 .demo h3, .demo i {
     color: var(--var-secondary-blue);
@@ -287,8 +329,6 @@ header nav {
    
 }
 
-
-
 .strategic {
     color: white;
 }
@@ -306,8 +346,6 @@ header nav {
 .strategic h3 {
     font-size: 28px;
 }
-
-
 
 .planning .content {
     background-color: white;
@@ -330,6 +368,7 @@ header nav {
     border-radius: 50%;
     background-color: var(--var-primary-purple);
     margin-top: 1rem;
+    transition: opacity 0.2s ease;
 }
 
 .heading >* {
@@ -367,8 +406,6 @@ header nav {
     font-size: 1.375rem;
 }
 
-
-
 .avatar img, .about img {
     width: 10rem;
     height: 10rem;
@@ -390,7 +427,7 @@ header nav {
 
 .benefits h1 {
     color: white;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .lg {
@@ -420,7 +457,7 @@ header nav {
 .about .about_img i {
     font-size: 52px;
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 7.8rem;
 }
 
@@ -431,6 +468,46 @@ header nav {
 .about p {
     padding-bottom: 2rem;
 }
+
+.linkedin {
+    letter-spacing: 0;
+}
+
+.call_to_action {
+    color: white;
+}
+
+.call_to_action >* {
+    padding: 1rem 0;
+}
+
+.call_to_action span {
+    color: var(--var-secondary-text);
+}
+
+.call_to_action .btn_large, .call_to_action .jumbo {
+    margin: 2rem 0;
+}
+
+
+.call_to_action .jumbo {
+    font-size: 72px;
+    color: var(--var-yellow);
+}
+
+.call_to_action ul li {
+    padding-left: 0.5rem;
+}
+
+.copyright a {
+    padding: 0.5rem;
+}
+
+.copyright a:hover, .footer_bottom a:hover {
+    text-decoration: underline;
+}
+
+
  
 
 
@@ -445,15 +522,32 @@ header nav {
 
 /* #region footer */
 footer {
-    background-color: black;
+    background-color: var(--var-almost-black);
+    color: white;
+    padding: 2rem 0;
 }
+.footer_top, .footer_bottom {
+    padding: 1rem 0;
+}
+
+.footer_bottom a {
+    color: var(--var-primary-purple);
+    
+}
+
 /* #endregion */
 
 
 /* respsonsive */
 @media screen and (min-width: 768px) {
     
+    .container_sm {
+        width: 80%;
+    }
 
+    .btn_large {
+        width: 50%;
+    }
     
 
     .col-md-8 {
@@ -495,7 +589,13 @@ footer {
 
 @media screen and (min-width: 1200px) {
 
-   
+    .container_sm {
+        width: 40%;
+    }
+
+    .btn_large {
+        width: 50%;
+    }
     
     .col-lg-6 {
         width: calc((100%/12)*6);
