@@ -38,6 +38,10 @@ a {
     color: white;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -72,6 +76,8 @@ img {
 .text-center {
     text-align: center;
 }
+
+
 
 
 /* #region columns */
@@ -158,8 +164,6 @@ img {
 
 .btn {
     width: 40%;
-   
-    
 }
 
 .blue {
@@ -206,10 +210,12 @@ header nav {
     
 }
 
-.content p {
+.demo .content p {
     padding: 2rem 0;
     line-height: 188%;
     letter-spacing: 0.011em;
+    color: var(--var-secondary-text);
+    
 }
 
 
@@ -218,9 +224,6 @@ header nav {
     color: var(--var-secondary-blue);
 }
 
-.demo h3 {
-    font-size: 1.375;
-}
 
 .demo i {
     font-size: 72px;
@@ -254,10 +257,42 @@ header nav {
     padding-top: 3rem;
     max-width: 80%;
     
-    
-    
-   
 }
+
+.col-12.pt-50 {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 4rem;
+    
+}
+
+.strategic {
+    color: white;
+}
+
+.strategic img {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.strategic p {
+    padding: 3rem 0;
+}
+
+
+
+.planning .content {
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    width: 65%;
+}
+
+.planning .content>*{
+    padding: 1rem 0;
+}
+
+
 
 
 
