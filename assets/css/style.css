@@ -14,7 +14,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     letter-spacing: 0.011em;
 }
 
@@ -194,14 +194,14 @@ img {
 
 .btn {
     width: 40%;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0.6rem 1rem;
 }
 
 .btn_large {
     padding: 1.5rem 2rem;
     width: 80%;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--var-primary-purple);
 }
 
@@ -290,7 +290,7 @@ header nav {
 .demo .content p {
     padding: 2rem 0;
     color: var(--var-secondary-text);
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
@@ -406,7 +406,7 @@ header nav {
 }
 
 .partner h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.375rem;
 }
 
@@ -436,7 +436,7 @@ header nav {
 
 .lg {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
@@ -445,7 +445,7 @@ header nav {
 }
 
 .benefits .content h2 {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .benefits .content p {
