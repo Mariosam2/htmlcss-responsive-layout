@@ -543,7 +543,7 @@ footer {
 
 
 /* respsonsive */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .container {
         max-width: 720px;
     }
@@ -597,7 +597,7 @@ footer {
     
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
     .container {
         max-width: 1140px;
     }
@@ -659,7 +659,7 @@ footer {
 }   
 
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1681px) {
     .container {
         max-width: 1440px;
     }
