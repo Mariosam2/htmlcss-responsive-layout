@@ -353,8 +353,8 @@ header nav {
 
 .planning .content {
     background-color: white;
-    padding: 2rem 4rem;
-    border-radius: 4rem;
+    padding: 2rem;
+    border-radius: 6rem;
     width: 100%;
 }
 
@@ -567,6 +567,7 @@ footer {
     object-fit: cover;
    }
 
+   
 
    .partner {
     flex-direction: row;
