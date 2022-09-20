@@ -174,16 +174,15 @@ img {
 
 
 
-.btn, .btn_small, .btn_large, .main_menu li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn, .btn_small, .btn_large {
+    display: inline-block;
+    text-align: center;
     border-radius: 2rem;
     letter-spacing: 0.2rem;
     transition: all 0.2s ease;
 }
 
-.btn_small, .main_menu li a {
+.btn_small {
     padding: 0.5rem 0.8rem;
    
 }
@@ -248,11 +247,20 @@ header nav {
 }
 
 .main_menu li {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 
-.main_menu li:hover a {
+
+.main_menu li a:not(.main_menu .btn_small){
+    display:inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+
+.main_menu li:not(.main_menu li:last-child):hover a {
     color: var(--var-secondary-blue);
     background-color: white;
 }
@@ -273,9 +281,9 @@ header nav {
 .demo .content {
     background-color: var(--var-lightblue);
     border-radius: 0.8rem;
-    flex-wrap: wrap;
     height: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
     
 }
 
@@ -313,22 +321,16 @@ header nav {
     
 }
 
-.phone {
-    align-items: flex-end;
-    margin-bottom: -1rem;
-    padding-left: 3rem;
+.text {
+    flex-basis: 100%;
 }
+
 
 .phone_img {
-   
-    padding-top: 3rem;
-    max-width: 80%;
+    margin-bottom: -1.5rem;
+    align-self: flex-end;
     
-}
-
-.planning .col-12.column {
-    justify-content: flex-end;
-   
+    
 }
 
 .strategic {
@@ -547,6 +549,7 @@ footer {
         width: 80%;
     }
 
+
     .btn_large {
         width: 50%;
     }
@@ -560,6 +563,7 @@ footer {
     width: 100%;
     object-fit: cover;
    }
+
 
    .partner {
     flex-direction: row;
@@ -607,7 +611,6 @@ footer {
         width: calc((100%/12)*4);
     }
 
-
     
     .main_menu {
         display: flex;
@@ -621,11 +624,12 @@ footer {
         padding-left: 8rem;
     }
 
-    
-
     .planning .content {
+        align-self: flex-end;
         width: 75%;
     }
+
+    
 
     .partner .bio {
         flex-basis: 90%;
@@ -635,6 +639,10 @@ footer {
 
     .linkedin {
         width: 60%;
+    }
+
+    .phone_img {
+        max-width: 60%;
     }
 
     
@@ -648,4 +656,16 @@ footer {
     .about h2{
         width: 60%;
     }
+    .text {
+        flex-basis: 60%;
+        
+    }
+
+    .phone_img {
+        max-width: 40%;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+   
+    
 }
